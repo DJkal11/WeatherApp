@@ -1,0 +1,50 @@
+
+body{
+    background-image: url(/images/noaa-jU-JOEZ2saQ-unsplash.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    
+}
+
+.container {
+margin: auto;
+width: 50%;
+text-align: center;
+padding: 10px;
+margin-top: 20%;
+}
+
+.Title{
+    font-size: 6rem;;
+}
+
+.paragraph{
+    font-size: 1.3rem;
+}
+
+button{
+    margin: 30px;
+}
+
+input{
+    width: 40%;
+    
+}
+
+.response{
+margin: auto;
+width: 70%;
+text-align: center;
+padding: 10px;
+margin-top: 10%;
+color: rgb(255, 255, 255);
+}
+
+.Temp{
+    font-size: 8rem;
+}
+
+img{
+    width: 15%;
+    height: 15%;
+}
