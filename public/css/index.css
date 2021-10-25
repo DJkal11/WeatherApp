@@ -38,6 +38,7 @@ text-align: center;
 padding: 10px;
 margin-top: 10%;
 color: rgb(255, 255, 255);
+border: 1px solid transparent;
 }
 
 .Temp{

@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const path = require('path');
 const ejs = require("ejs");
 const app = express();
+require('dotenv').config();
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -17,10 +18,12 @@ app.get("/", function(req, res){
     res.sendFile(__dirname+"/index.html");
 });
 
+
+
 app.post("/", function(req, res){
     
     const query = req.body.cityName;
-    const apiKey = `${process.env.apiKey}`;
+    const apiKey = process.env.API_KEY;
     const units = "metric"
 
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid="+apiKey+"&units="+units+"";
@@ -40,8 +43,6 @@ app.post("/", function(req, res){
         })
     });
 })
-
-
 
 
 
